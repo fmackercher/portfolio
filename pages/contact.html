@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/html5reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d1ca156746.js" crossorigin="anonymous"></script>
+    <script>
+        /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <title>FM Portfolio</title>
+</head>
+
+<body>
+    <header class="h-nav">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a id="main" class="skip" href="">Skip to Main Content</a>
+            <a href="../index.html" class="active"><img src="../images/logo.png" alt="logo" id="logo"></a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="../index.html">About</a>
+                <a href="../pages/portfolio.html">Portfolio</a>
+                <a href="../pages/resume.html">Resume</a>
+                <a href="../pages/contact.html">Contact</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </header>
+    <span></span>
+    <main>
+        <div>
+            <h1 class="contact-h1">Let's connect.</h1>
+            <p class="contact-text">
+                Get in touch via the form below, or send an email to <a href="mailto:fmackerc@umich.edu?subject=Hello!"
+                    class="email-link">fmackerc@umich.edu.</a>
+            </p>
+        </div>
+        <br>
+        <form action="https://formspree.io/f/xbjqlpze" method="POST" class="form-whole">
+            <div class="form-group">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" class="form-control" autofocus="true" maxlength="256" name="name" data-name="Name"
+                    placeholder="Enter your name" id="name" required="">
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" data-name="Email"
+                    placeholder="Enter your email address" maxlength="256" required="">
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" maxlength="5000"
+                    data-name="Message" required="" class="form-message"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer_bar">
+            <ul class="footer_bar_links">
+                <li class="social-item">
+                    <a id="social-email" href="" alt="email"><i class="far fa-envelope" aria-hidden="true"
+                            title="Email"></i></a>
+                </li>
+                <li class="social-item">
+                    <a id="social-linkedin" href="https://www.linkedin.com/in/fmackerc/" alt="linkedin"><i
+                            class="fab fa-linkedin" aria-hidden="true" title="Linkedin"></i></a>
+                </li>
+                <li class="social-item">
+                    <a id="social-github" href="https://github.com/fmackercher"><i class="fab fa-github"
+                            aria-hidden="true" title="Github"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
